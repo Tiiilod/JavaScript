@@ -1,6 +1,6 @@
 //soal 1 start
-var nilai = 65;
-var kehadiran = 10;
+var nilai = 80;
+var kehadiran = 14;
 var totalPertemuan = 15;
 var lulus = (kehadiran / totalPertemuan) * 100;
 

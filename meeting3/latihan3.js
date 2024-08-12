@@ -1,6 +1,6 @@
 //Nomor 1
 
-const pengunjung = 6;
+const pengunjung = 2;
 if (pengunjung >= 5) {
   console.log("Membayar Tiket Penuh");
 } else if (pengunjung >= 2 && pengunjung < 5) {
