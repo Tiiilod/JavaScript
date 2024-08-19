@@ -34,15 +34,6 @@ console.log(userName, userAge)
 
 
 // soal 3 Class
-class book{
-    constructor(tittle, author) {
-        this.tittle = tittle;
-        this.author = author;
-    }
-    getDetails() {
-        return `This is ${this.tittle}, a ${this.author}.`;
-    }   
-}
 
 class Book {
     constructor(title, author) {
@@ -53,9 +44,16 @@ class Book {
     getDetails() {
       return `${this.title} by ${this.author}`;
     }
+    updateAuthor(newAuthor) {
+        this.author = newAuthor;
+      }
   }
   
-  let myBook = new Book("JavaScript Essentials", "Jane Doe");
+  const myBook = new Book("JavaScript Essentials", "Jane Doe");
+
+  console.log(myBook.getDetails()); 
   
 
-  console.log(myBook.getDetails()); // Output: JavaScript Essentials by Jane Doe
+myBook.updateAuthor("Turky Husein");
+
+console.log(myBook.getDetails()); 
