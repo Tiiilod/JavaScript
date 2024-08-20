@@ -1,2 +1,2 @@
 
-console.log("asd");
+console.log("Hello Word");
