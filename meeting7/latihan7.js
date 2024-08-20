@@ -10,10 +10,9 @@ const person = {
 
 console.log(person.addres.city);
 
-<<<<<<< HEAD
-=======
 
->>>>>>> b0723eaf52ba38c6347a14f22f1fb6dbd2977302
+
+
 console.log(person['name'])
 console.log(person.name)
 
@@ -37,18 +36,18 @@ const { name:userName, age:userAge} = person;
 console.log(userName, userAge)
 
 
-// soal 3 Class
-<<<<<<< HEAD
-class book{
-    constructor(tittle, author) {
-        this.tittle = tittle;
-        this.author = author;
-    }
-    getDetails() {
-        return `This is ${this.tittle}, a ${this.author}.`;
-    }   
-}
-=======
+// // soal 3 Class
+// <<<<<<< HEAD
+// class book{
+//     constructor(tittle, author) {
+//         this.tittle = tittle;
+//         this.author = author;
+//     }
+//     getDetails() {
+//         return `This is ${this.tittle}, a ${this.author}.`;
+//     }   
+// }
+
 
 class Book {
     constructor(title, author) {
@@ -72,4 +71,3 @@ class Book {
 myBook.updateAuthor("Turky Husein");
 
 console.log(myBook.getDetails()); 
->>>>>>> b0723eaf52ba38c6347a14f22f1fb6dbd2977302
