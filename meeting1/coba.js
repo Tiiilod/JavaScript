@@ -1,1 +1,2 @@
-document.write("Coba JavaScript");
+
+console.log("asd");
