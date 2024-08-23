@@ -35,3 +35,4 @@ console.log(employee.introduce());
 
 let manager = new Manager("manager", "manager");
 console.log(manager.introduce());
+
