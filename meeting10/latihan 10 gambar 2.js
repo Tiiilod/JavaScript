@@ -1,14 +1,14 @@
-function calculateTotalPrice(quantity, pricePerItem, isConfirmed) {
+// Fungsi Kalkulasi Harga
+function calculatePrice(quantity, pricePerItem, isMember) {
     let totalPrice = quantity * pricePerItem;
-    if (isConfirmed) {
+    if (isMember) {
         totalPrice -= totalPrice * 0.15;
     }
     return totalPrice;
 }
 
-console.log(calculateTotalPrice(3, 150,true));
 
-
+// Fungsi Konfirmasi Pembayaran
 function confirmPurchase(isConfirmed, totalPrice) {
     if (isConfirmed) {
         console.log(`Purchase confirmed with total price: ${totalPrice}`);
@@ -17,5 +17,10 @@ function confirmPurchase(isConfirmed, totalPrice) {
     }
 }
 
-let totalPrice = calculateTotalPrice(3, 150, true);
-confirmPurchase(true, totalPrice);
+let quantity = 3;
+let pricePerItem = 150;
+let isMember = true;
+let isConfirmed = true;
+
+let totalPrice = calculatePrice(quantity, pricePerItem, isMember);
+confirmPurchase(isConfirmed, totalPrice);

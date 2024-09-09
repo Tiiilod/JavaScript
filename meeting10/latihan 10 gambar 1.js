@@ -1,6 +1,4 @@
-function registerUser(name, userType) {
-    return "Selamat datang "
-}
+
 
 function registerUser(name, userType) {
     if (userType === "VIP") {
