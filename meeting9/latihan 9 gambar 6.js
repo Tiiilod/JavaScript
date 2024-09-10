@@ -31,7 +31,7 @@ class Manajer extends Karyawan {
     }
 }
 
-let manager = new Manajer("Turky", 99999999);
+let manager = new Manajer("Turky", 999999999999999);
 console.log(manager.getNama()); 
 console.log(manager.getGaji()); 
 console.log(manager.buatLaporan());

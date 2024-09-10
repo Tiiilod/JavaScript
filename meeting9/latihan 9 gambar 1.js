@@ -27,4 +27,3 @@ mobilSaya._merk = "Toyota";
 mobilSaya._tahun = 2022;
 console.log("Merk baru:", mobilSaya._merk);
 console.log("Tahun baru:", mobilSaya._tahun);
-

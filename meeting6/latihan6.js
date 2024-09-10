@@ -7,7 +7,7 @@ namakhir[0] = "hafizh";
 console.log(namakhir);
 // no 3
 const spilce = ["Turky", "15 Tahun", "Jakarta"];
-spilce.splice(1, 2);
+spilce.splice(0, 1);
 console.log(spilce);
 // no 4
 const satu = ["Turky", "15 Tahun", "Jakarta"];
