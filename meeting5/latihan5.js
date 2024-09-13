@@ -19,7 +19,7 @@ console.log('Today is ' + day);
 // no 2
 for (let i = 1; i <= 12; i++) {
     // console.log(i);
-    if (i % 2 === 1 && i % 3 === 0 ) {
+    if (i % 3 === 0 && i % 5 === 0 ) {
       console.log("fizzbuzz " +i);
     } else if (i % 3 === 0) {
       console.log("fizz " + i);
