@@ -17,9 +17,9 @@ switch (num) {
 }
 console.log('Today is ' + day);
 // no 2
-for (let i = 6; i <= 80; i++) {
+for (let i = 1; i <= 13; i++) {
     // console.log(i);
-    if (i % 2 === 0 && i%7 === 0 ) {
+    if (i % 2 === 0 && i % 4 === 0 ) {
       console.log("fizzbuzz " +i);
     } else if (i % 3 === 0) {
       console.log("fizz " + i);
@@ -40,8 +40,8 @@ for (let i = 0; i <= 10; i++) {
   }
 }
 // no 4
-for (let i = 0; i <= 15; i++) {
-    if (i % 3 === 0) {
+for (let i = 1; i <= 25; i++) {
+    if (i % 4 === 0) {
       console.log('multiple 3',i);
     }
 }
