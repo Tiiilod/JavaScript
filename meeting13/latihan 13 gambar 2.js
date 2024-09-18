@@ -1,5 +1,5 @@
 function checkNumber(index) {
-    const numbers = [3, 7, 1, 6]; // Array numbers berisi empat angka: 3, 7, 1, dan 6.
+    const numbers = [3, 7, 1, 6]; 
     return new Promise((resolve, reject) => {
         const number = numbers[index];
         if (number > 5) {
@@ -9,6 +9,19 @@ function checkNumber(index) {
         }
     });
 }
+
+// atau
+
+// const number = [3, 7, 1, 6];
+// function checkNumber() {
+//   return new Promise((resolve, reject) => {
+//     if (number[1] > 5) {
+//       resolve("Number too high");
+//     } else {
+//       reject("Number too low");
+//     }
+//   });
+// }
 
 
 checkNumber(1)

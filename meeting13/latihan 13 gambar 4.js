@@ -20,5 +20,5 @@ simulateTask()
         console.error(error);
     })
     .finally(() => {
-        console.log('Task completed');
+        console.log('Task completed'); // mau gagal atau berhasil finally akan tetap muncul
     });
