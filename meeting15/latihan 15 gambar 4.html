@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kombinasi Popup</title>
+    <script type="text/javascript">
+        function showPopups() {
+            alert("Selamat Datang!");
+            var proceed = confirm("Apakah Anda ingin mengisi nama anda?");
+            if (proceed) {
+                var name = prompt("Masukkan nama Anda:");
+                if (name) {
+                    alert("Halo, " + name + "!");
+                } else {
+                    alert("Anda tidak memasukkan nama.");
+                }
+            } else {
+                alert("Anda memilih untuk tidak melanjutkan.");
+            }
+        }
+    </script>
+</head>
+<body onload="showPopups()">
+</body>
+</html>

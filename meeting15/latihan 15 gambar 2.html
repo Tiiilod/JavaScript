@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirm Box Example</title>
+    <script type="text/javascript">
+        function showConfirmBox() {
+            var result = confirm("Apakah Anda ingin melanjutkan?");
+            if (result) {
+                alert("Anda memilih OK!");
+            } else {
+                alert("Anda memilih Cancel!");
+            }
+        }
+    </script>
+</head>
+<body onload="showConfirmBox()">
+</body>
+</html>
