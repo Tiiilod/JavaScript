@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh DOM</title>
+</head>
+<body>
+    <div id="container">
+        <p id="turky">Ini adalah elemen dengan ID "turky".</p>
+        <p class="coba">Paragraf dengan kelas "coba".</p>
+        <span class="coba">Span dengan kelas "coba".</span>
+        <div class="coba">Div dengan kelas "coba".</div>
+    </div>
+    <script src="script.js">
+        let turkyElement = document.getElementById('turky');
+        turkyElement.style.color = 'red';
+
+        let firstCobaElement = document.querySelector('.coba');
+        firstCobaElement.textContent = 'Elemen pertama yang diubah';
+
+        //     let elementById = document.getElementById('turky');
+        // elementById.style.color = 'red';
+
+        //     let firstElementByClass = document.querySelector('.coba');
+        // firstElementByClass.textContent = 'Elemen pertama yang diubah';
+    </script>
+</body>
+</html>

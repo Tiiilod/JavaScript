@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh DOM</title>
+</head>
+<body>
+    <p id="coba">   Ini adalah elemen dengan ID "coba".</p>
+    
+    <script>
+        // Untuk mengakses Element
+        let querySelector = document.querySelector(".coba");
+        let querySelectorAll = document.querySelectorAll(".coba");
+
+        console.log(querySelector);
+        console.log(querySelectorAll);
+        
+        // Untuk mengubah konten
+        let cobaElement = document.getElementById('coba');
+
+        console.log(cobaElement.innerHTML);
+        console.log(cobaElement.textContent);
+        // Untuk menambah Element
+        let newElement = document.createElement('p');
+
+        newElement.innerHTML = "coba createElement";
+        coba.appendChild(newElement);
+
+        // Untuk menghapus Element
+        coba[0].removeChild(newElement);
+
+    </script>
+</body>
+</html>
