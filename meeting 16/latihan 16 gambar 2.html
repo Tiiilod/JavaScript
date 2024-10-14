@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS 16 GAMBAR 2</title>
+</head>
+<body>
+    <div class="konten">
+        <p>Teks Awal</p>
+    </div>
+
+    <script>
+        
+        let konten = document.querySelector('.konten');
+        konten.innerHTML = '<strong>Teks Baru</strong>';
+        console.log(konten.innerHTML);
+
+        // const konten2 = document.querySelector('.konten');
+        konten.innerText = 'Teks Terlalu Panjang';
+        console.log(konten.innerText);
+
+        // const konten3 = document.querySelector('.konten');
+        konten.textContent = '<strong>Teks Baru</strong>';
+        console.log(konten.textContent);
+    </script>
+</body>
+</html>
