@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 18 gambar 3</title>
+</head>
+<body>
+        <button id="myButton">Tekan Ini</button>
+        <p>Kamu sudah menekan tombol (Tekan Ini) sebanyak <span id="count">0</span></p>
+        <!-- <h3>Kamu sudah menekan tombol (Tekan Ini) sebanyak <span id="count">0</span></h3> -->
+
+
+    <script>
+        const button = document.getElementById("myButton");
+        button.addEventListener('click', function () {
+            increment();
+        });
+
+        function increment() {
+            let count = document.getElementById("count").innerText; count++;
+            document.getElementById("count").innerText = count;
+        }
+    </script>
+</body>
+</html> 
