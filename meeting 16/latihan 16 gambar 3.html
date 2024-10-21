@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TUGAS 16 GAMBAR 3</title>
-</head>
-<body>
+  </head>
+  <body>
     <div>
-        <ul id="kontenDaftar">
-
-        </ul>
+      <ul id="kontenDaftar"></ul>
     </div>
 
     <script>
-          const kontenDaftar = document.getElementById("kontenDaftar");
-        const daftar = ["Item 1", "Item 2", "Item 3"];
-        for (let i = 0; i < daftar.length; i++) {
-            ;
-            const newDaftar = document.createElement("li");
-            newDaftar.innerHTML = daftar[i];
-            kontenDaftar.appendChild(newDaftar);
-        };
+      const kontenDaftar = document.getElementById("kontenDaftar");
+      const daftar = ["Item 1", "Item 2", "Item 3"];
+      for (let i = 0; i < daftar.length; i++) {
+        const newDaftar = document.createElement("li");
+        newDaftar.innerHTML = daftar[i];
+        kontenDaftar.appendChild(newDaftar);
+      }
 
-        kontenDaftar.firstElementChild.remove();
+      kontenDaftar.firstElementChild.remove();
     </script>
-</body>
+  </body>
 </html>
