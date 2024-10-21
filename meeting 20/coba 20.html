@@ -20,6 +20,13 @@ function mouseup() {
 function myFunction() {
   alert("Anda menekan tombol di dalam kolom input");
 }
+
+document.getElementById('myLink').addEventListener('click', function (event) {
+  event.preventDefault();
+
+  messageDiv.textContent =  "Anda menekan tombol tapi tidak diarahkan kegoogle";
+
+});
 </script>
 
 <video controls onloadstart="test()">
@@ -38,5 +45,9 @@ function myFunction() {
 
 <input type="text" onkeydown="myFunction()">
 
+
+<a href="www.google.com">Klik untuk mengunjungi google!</a>
+
+<div class="mylink" id="mylink"></div>
 </body> 
 </html>
