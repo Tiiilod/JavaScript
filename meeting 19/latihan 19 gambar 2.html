@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soal 2 Latihan 19</title>
+    <title>Latihan 19 Gambar 2 </title>
 </head>
 
 <body>
@@ -14,7 +14,7 @@
 
     <script>
         // Membuat custom event bernama 'buttonClicked'
-        const buttonClicked = new CustomEvent('buttonClicked');
+        const buttonClickedEvent = new CustomEvent('buttonClicked');
 
         // Fungsi untuk menangani custom event
         function handleButtonClick() {
@@ -36,7 +36,7 @@
 
             // Saat tombol diklik, dispatch custom event 'buttonClicked'
             tombol.addEventListener('click', function () {
-                window.dispatchEvent(buttonClicked);
+                window.dispatchEvent(buttonClickedEvent);
             });
 
             // Memanggil fungsi untuk menangani klik pada parent
