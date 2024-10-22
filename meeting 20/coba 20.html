@@ -2,6 +2,10 @@
 <html> 
 <body> 
 
+
+  <a href="www.google.com" id="myLink">Kunjungi Google.com</a>
+
+<div class="message" id="message"></div>
 <script>
 function test() {
   alert('Starting to load video');
@@ -21,12 +25,26 @@ function myFunction() {
   alert("Anda menekan tombol di dalam kolom input");
 }
 
-document.getElementById('myLink').addEventListener('click', function (event) {
+
+const Link = document.getElementById(myLink)
+Link.addEventListener("click", function (event) {
   event.preventDefault();
 
-  messageDiv.textContent =  "Anda menekan tombol tapi tidak diarahkan kegoogle";
-
+  const messageDiv = document.getElementById("message");
+  messageDiv.textContent =  "Anda mengklik link, tapi tidak akan diarahkan ke Google.com.";
 });
+
+// document.getElementById('myLink').addEventListener('click', function (event) {
+//             event.preventDefault();
+
+//             messageDiv.textContent =
+//                 'Anda mengklik link, tetapi tidak akan diarahkan ke google' })
+// document.getEl  ementById('myLink').addEventListener('click', function (event) {
+//   event.preventDefault();
+
+//   messageDiv.textContent =  "Anda menekan tombol tapi tidak diarahkan kegoogle";
+
+// })
 </script>
 
 <video controls onloadstart="test()">
@@ -46,8 +64,8 @@ document.getElementById('myLink').addEventListener('click', function (event) {
 <input type="text" onkeydown="myFunction()">
 
 
-<a href="www.google.com">Klik untuk mengunjungi google!</a>
+<!-- <a href="www.google.com" id="myLink">Kunjungi Google.com</a>
 
-<div class="mylink" id="mylink"></div>
+<div class="message" id="message"></div> -->
 </body> 
 </html>
