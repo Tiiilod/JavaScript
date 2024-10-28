@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Local Storage Demo</h1>
+    <input type="text" id="username" placeholder="Masukkan Username">
+    <button id="saveButton">Simpan Username</button>
+    <button id="loadButton">Ambil Username</button>
+    <button id="removeButton">Hapus Username</button>
+    <p id="output"></p>
+
+<script>
+// Menyimpan data dari localStorage
+    document.getElementById("saveButton").addEventListener("click", function() {
+        const username = document.getElementById('username').value;
+        localStorage.setItem('username', username);
+        alert('username disimpan:  ' + username);
+
+});
+
+// Mengambil data dari LocalStorage
+    document.getElementById("loadButton").addEventListener("click", function() {
+        const storedUsername = localStorage.getItem('username');
+        document.getElementById("output").innerText = 'Username yang disimpan ' + (storedUsername ? storedUsername : 'tidak ada');
+
+});
+
+// Menghapus data dari LocalStorage
+    document.getElementById("removeButton").addEventListener("click", function() {
+        localStorage.removeItem('username');
+        alert('Username dihapus');
+
+});
+
+
+// Session Storage
+// Menyimpan data
+sessionStorage.setItem('username', 'Turky');
+
+// Mengambil data 
+const username = sessionStorage.getItem('username');
+console.log(username);
+
+// Menghapus data
+sessionStorage.removeItem('username');
+
+// Menghapus semua data
+sessionStorage.clear()
+
+</script>
+</body>
+</html>
