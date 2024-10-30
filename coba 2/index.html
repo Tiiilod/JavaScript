@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bookshelf App</h1>
+  </header>
+
+  <main>
+    <!-- Form untuk Menambahkan Buku Baru -->
+    <section class="add-book-section">
+      <h2>Tambah Buku Baru</h2>
+      <form id="bookForm">
+        <label for="bookTitle">Judul</label>
+        <input type="text" id="bookTitle" required>
+
+        <label for="bookAuthor">Penulis</label>
+        <input type="text" id="bookAuthor" required>
+
+        <label for="bookYear">Tahun</label>
+        <input type="number" id="bookYear" required>
+
+        <label>
+          <input type="checkbox" id="bookIsComplete"> Selesai Dibaca
+        </label>
+
+        <button type="submit">Tambah Buku</button>
+      </form>
+    </section>
+
+    <!-- Form Pencarian Buku -->
+    <section class="search-book-section">
+      <h2>Cari Buku</h2>
+      <form id="searchForm">
+        <input type="text" id="searchTitle" placeholder="Cari judul buku...">
+        <button type="submit">Cari</button>
+      </form>
+    </section>
+
+    <!-- Daftar Buku -->
+    <section class="book-list">
+      <h2>Belum Selesai Dibaca</h2>
+      <div id="incompleteBookshelf"></div>
+
+      <h2>Selesai Dibaca</h2>
+      <div id="completeBookshelf"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
